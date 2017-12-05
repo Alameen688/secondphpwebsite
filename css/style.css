@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #fafcf6;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/*.topnav{ border:1px solid #eee; 
+        background-color:#eee; 
+        width:100%;
+		margin-bottom:20px;
+}
+*/
+ul.tabs { padding:0px;
+          width:100%;
+		  height:42px;
+		  border-bottom:1px solid #cccccc;
+		  float:left;
+		  margin-bottom:20px;
+}
+ul.tabs li{  height:40px;
+            list-style-type:none;
+			margin-right:5px;
+			float:left;
+			border:1px solid #eeeeee;
+			background-color:#fff;
+			overflow:hidden;
+			position:relative;
+			min-width:100px;
+			text-align:center;
+}
+ul.tabs li:hover{ border:1px solid #cccccc;
+                  border-bottom:none; 
+}
+ul.tabs li:first-child{ border-left:none;
+}
+
+ul.tabs li a{  text-decoration:none;
+               color:#333333;
+			   display:block;
+			   font-size:16px;
+			   padding:8px 8px 8px 8px;
+			   outline:none;
+			   font-size:19px;
+			   font-family:'fontin', Helvetica, Verdana, sans-serif;
+}
+ul.tabs li a:hover{background:whitesmoke;
+                   color:#ffab00;
+}
+ul.tabs li.focus{
+	}
+ul.tabs li.active a{background:#eeeeee;
+}
+
+a:link {
+	color:#ffab00;
+	text-decoration:none;
+	
+}
+ a:visited {
+	 color:#ffab00;
+	text-decoration:none;  	
+}
+a:hover, a:active, a:focus {
+	color:#ffab00;
+	text-decoration: underline;
+}
+
+.container {
+	width: 100%;
+	background: #fafcf6;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	width:100%;
+	height:40px;
+	background: #cccccc;
+	margin-bottom:5px;
+}
+
+.sidenav{/*border:1px solid #d4d4d4;*/ 
+         width:300px; 
+         float:left;
+		 margin-right:20px;
+		}
+.navcontainer{
+	     width:300px;
+	     -moz-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 -webkit-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 -o-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 background-color:#fff;
+		 margin-bottom:30px;
+		 }	
+.eachnav{ padding:4px; 
+          font-family:'fontin', Helvetica, Verdana, sans-serif;
+          
+	}
+.navtitle{ width:283px; 
+           border-left:1px solid #D4D4D4;
+           border-right:1px solid #D4D4D4;
+           border:1px thin #D4D4D4;
+           padding:0px 8px 0px 8px;
+		   background-color:#00A3A3;/* awesome light background #f2f2f2, ECEEF8*/
+		   color:#FF6;/*#FF2E12 #ffab00*/
+		   font:'fontin', Helvetica, Verdana, sans-serif;
+	}		
+.advert {
+	float: left;
+	width: 20%;
+	background: #CCC;
+	height:500px;
+	position:relative;
+	margin-bottom:10px;
+}
+.content {
+	width:600px;/*must be d same as .eachcont width*/
+    margin-left:5px;
+    float: left;
+	padding-right:50px/*to shift the sidenav to the right*/;
+	font-family:'fontin',verdana,helvetica,sans-serif;
+	
+}
+.minicontainer{
+    	-moz-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 -webkit-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 -o-box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 box-shadow: 0px 0px 20px 3px #d3d3d3;
+		 }
+.eachcont{ background-color:#FFFFFF;
+           border:1px solid #D4D4D4;
+           width:600px;
+		   margin-bottom:12px;
+		   padding:8px;
+		   font-family:'fontin',verdana,helvetica,sans-serif;
+		   line-height:1.4656789024;
+		   font-size:17px;
+		   font-weight:normal;
+		   color:#404040;
+		  
+	}
+.ctitle { color:#1faeff; 
+          /*#C30075#666#00A3A3*/
+	}		
+.ctitle a{color:#1faeff; 
+         /*#00A3A3*/
+	}	
+
+.cleartop{ border-left:1px solid #D4D4D4;
+           border-right:1px solid #D4D4D4;
+           border:1px thin #D4D4D4;
+           width:600px;
+		   padding:0px 8px 0px 8px;
+		   background-color:#00D8CC;/* #ffab00*/
+		   color:#f2f2f2;
+		   font-size:18px;
+	}
+.cinfo{ color:#00C13F;
+	}	
+.more{ margin:15px 0px 5px 430px;
+       font-size:18px;
+	}	
+.more a{ color:#ffab00;
+	}
+#catdesc{ color:#555;
+          text-align:center;
+		  margin-bottom:10px;
+          font-family:'fontin', Helvetica, Verdana, sans-serif;
+	}	
+/* ~~ Page link ~~ */	
+#pagicon{ margin-bottom:70px;/*to push footer down but works with padding below*/
+		  width:600px;
+		  padding:10px 0 10px 0;
+	}	
+ul#pagination{ list-style-type:none;
+                display:inline; 	
+    }		
+ul#pagination .pagetrack{ display:block;
+               float:left;
+			   -moz-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       -webkit-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       -o-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       box-shadow: 0px 0px 8px 1px #d3d3d3; 
+               background-color:#FFF;
+               border:1px solid #D4D4D4;
+               width:20px;
+		       padding:5px;
+			   text-align:center;
+			   margin:0 5px 5px 5px;
+		       font-family:'fontin',verdana,helvetica,sans-serif;
+		       font-size:17px;
+		       font-weight:normal;
+			   width:40px;
+		       
+	}		
+ul#pagination a{ text-decoration:none;
+                color:#ffab00;
+       }
+ul#pagination li.pageno{ 
+               display:block;
+               float:left;
+			   -moz-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       -webkit-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       -o-box-shadow: 0px 0px 8px 1px #d3d3d3;
+		       box-shadow: 0px 0px 8px 1px #d3d3d3; 
+               background-color:#FFF;
+               border:1px solid #D4D4D4;
+               width:20px;
+		       padding:5px;
+			   text-align:center;
+			   margin:0 5px 5px 5px;
+		       font-family:'fontin',verdana,helvetica,sans-serif;
+		       font-size:17px;
+		       font-weight:normal;
+	}
+ul#pagination li.on{ background-color:#eee;
+					 box-shadow:none;
+	}
+/* ~~ The footer ~~ */
+.footer {
+	padding:5px 0px;
+	height:30px;
+	clear: both;
+	width:100%;
+	font-size:16px;
+	font-family:cantarell, Helvetica, sans-serif;
+}

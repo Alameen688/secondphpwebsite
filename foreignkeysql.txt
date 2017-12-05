@@ -1,0 +1,3 @@
+sql code to ad foriegn key and 'restrict' delete instead of 'cascade'
+ALTER TABLE democomments ADD FOREIGN KEY(IdReplyTo)
+REFERENCES democomments(IdComment) ON DELETE RESTRICT ON UPDATE CASCADE  
